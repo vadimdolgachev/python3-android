@@ -76,5 +76,5 @@ def env_vars(target_arch_name: str, android_api_level: int) -> Dict[str, str]:
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--arch', required=True, choices=ARCHITECTURES.keys(), dest='target_arch_name')
-    parser.add_argument('--api', required=True, type=int, choices=range(21, 30), dest='android_api_level')
+    parser.add_argument('--api', required=True, type=int, choices=range(21, 31), dest='android_api_level')
     return parser.parse_known_args()

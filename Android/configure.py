@@ -15,6 +15,8 @@ def main():
         '--build=x86_64-linux-gnu',
         'ac_cv_file__dev_ptmx=yes',
         'ac_cv_file__dev_ptc=no',
+        '--without-ensurepip',
+        'ac_cv_little_endian_double=yes',
         'ac_cv_buggy_getaddrinfo=no',  # for IPv6 functionality
     ]
 

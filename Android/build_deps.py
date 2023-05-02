@@ -121,7 +121,7 @@ class XZ(Package):
     source = 'https://tukaani.org/xz/xz-5.2.5.tar.xz'
 
 class ZLib(Package):
-    source = 'https://www.zlib.net/zlib-1.2.11.tar.gz'
+    source = 'https://www.zlib.net/fossils/zlib-1.2.11.tar.gz'
 
     def configure(self):
         os.environ.update({

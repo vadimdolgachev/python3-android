@@ -5,7 +5,7 @@ set -x
 
 THIS_DIR="$PWD"
 
-PYVER=3.9.0
+PYVER=3.10.0
 SRCDIR=src/Python-$PYVER
 
 COMMON_ARGS="--arch ${ARCH:-arm} --api ${ANDROID_API:-21}"
@@ -31,3 +31,6 @@ make install DESTDIR="$THIS_DIR/build"
 popd
 cp -r $SRCDIR/Android/sysroot/usr/share/terminfo build/usr/share/
 cp devscripts/env.sh build/
+
+find build/usr -name __pycache__ -exec rm -rf {} \;
+
